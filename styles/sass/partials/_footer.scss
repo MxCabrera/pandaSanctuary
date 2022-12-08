@@ -1,27 +1,21 @@
 footer {
    background-color: $secondary;
-   .wrapper {
-      max-width: 1400px;
-      width: 90%;
-      margin: 0 auto;
+   .footerContainer {
+      padding: 50px 0;
+      .updatedContainer,
+      .contact {
+         width: 45%;
+      }
    }
 }
 
-.footerContainer {
-   padding: 50px 0;
-}
-
-.updatedContainer,
-.contact {
-   width: 45%;
-}
+// footer section styles //
 
 .updatedContainer {
    h3 {
       font-family: $baseFontOne;
       font-weight: 400;
       font-size: 20px;
-
    }
    p {
       font-family: $baseFontTwo;
@@ -31,17 +25,17 @@ footer {
       padding: 0 5px;
    }
    .subscribe {
-      padding: 10px 25px;
       background-color: $quaternary;
-      color: $quinary;
       font-family: $baseFontOne;
+      text-transform: uppercase;
+      padding: 10px 25px;
+      color: $quinary;
       border: none;
       width: 30%;
-      text-transform: uppercase;
    }
    .subscribe:hover {
-      color: $quaternary;
       background-color: $quinary;
+      color: $quaternary;
    }
 }
 
@@ -50,39 +44,43 @@ footer {
    h3,
    p {
       letter-spacing: 0.2px;
+      font-weight: 400;
    }
    h3 {
       font-family: $baseFontOne;
-      font-weight: 400;
       font-size: 20px;
    }
    p {
       font-family: $baseFontTwo;
-      font-weight: 400;
       font-size: 16px;
    }
 }
 
+// button styles //
+
 .buttonsContainer {
    li {
-      list-style: none;
-      margin: 5px 0;
       text-align: right;
       line-height: 26px;
+      list-style: none;
+      margin: 2px 0;
       a {
+         font-family: $baseFontOne;
          text-decoration: none;
          color: $quinary;
-         font-family: $baseFontOne;
+      }
+      a:hover {
+         color: $quaternary;
       }
    }
 }
 
 .copyright {
-   padding: 20px 0;
    background-color: $quaternary;
+   padding: 15px 0;
    p{
-      margin: 0;
-      text-align: center;
       font-family: $baseFontTwo;
+      text-align: center;
+      margin: 0;
    }
 }

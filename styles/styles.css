@@ -245,16 +245,17 @@ html {
   display: flex;
 }
 
-header {
-  padding-top: 20px;
-  background-image: url(../assets/header-image.png);
-  background-size: cover;
-  height: 100vh;
-}
-header .wrapper {
+.wrapper {
   max-width: 1400px;
   width: 90%;
   margin: 0 auto;
+}
+
+header {
+  background-image: url(../assets/header-image.png);
+  background-size: cover;
+  padding-top: 20px;
+  height: 100vh;
 }
 
 .menuContainer div {
@@ -266,9 +267,12 @@ header .wrapper {
 }
 .menuContainer .logo a {
   font-family: "Offside", cursive;
+}
+.menuContainer .logo a,
+.menuContainer .navigations li a {
   font-size: 20px;
-  color: #fff;
   text-decoration: none;
+  color: #fff;
 }
 .menuContainer .navigations {
   width: 50%;
@@ -283,10 +287,6 @@ header .wrapper {
 }
 .menuContainer li a {
   font-family: "Barlow", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  text-decoration: none;
-  color: #fff;
 }
 .menuContainer li:hover {
   text-decoration: underline;
@@ -298,39 +298,59 @@ header .wrapper {
           justify-content: space-between;
 }
 .wrapper .title h1 {
-  width: 40%;
   font-family: "Barlow", sans-serif;
   font-size: 68.8px;
   font-weight: 400;
+  width: 40%;
 }
 .wrapper .socialContainer li {
   list-style: none;
 }
 .wrapper .socialContainer li a {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
 }
 .wrapper .socialContainer li a i {
-  font-size: 26px;
   margin: 10px auto;
+  font-size: 26px;
+}
+.wrapper .socialContainer li a:hover {
+  color: #213C28;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.wrapper .socialContainer li a:visited {
+  color: #D6F1E4;
+}
+
+.wrapper h2,
+.infoContainer button,
+.pandaInfo h3,
+.pandaInfo button,
+.otherLinks li a {
+  font-family: "Offside", cursive;
+}
+
+.infoContainer p,
+.pandaInfo p {
+  font-family: "Barlow", sans-serif;
+}
+
+.aboutSection .wrapper h2,
+.pandaInfo button,
+.otherLinks li a {
+  color: #116500;
 }
 
 .aboutSection {
-  padding: 20px 0;
   background-color: #D6F1E4;
-}
-.aboutSection .wrapper {
-  max-width: 1400px;
-  width: 90%;
-  margin: 0 auto;
+  padding: 20px 0;
 }
 .aboutSection .wrapper h2 {
-  color: #116500;
-  font-family: "Offside", cursive;
-  font-size: 42px;
-  margin: 0;
-  padding: 50px;
   text-align: center;
+  font-size: 42px;
+  padding: 50px;
+  margin: 0;
 }
 .aboutSection .wrapper .flex {
   -webkit-box-pack: justify;
@@ -368,11 +388,17 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 70%;
+}
+.aboutInfo .infoContainer h2 {
+  margin-bottom: 30px;
 }
 .aboutInfo .infoContainer h2,
 .aboutInfo .infoContainer p,
@@ -381,23 +407,29 @@ header .wrapper {
   padding: 0 15px;
 }
 .aboutInfo .infoContainer p {
-  color: #213C28;
-  font-family: "Barlow", sans-serif;
-  font-size: 20px;
   margin-bottom: 20px;
   line-height: 30px;
+  color: #213C28;
+  font-size: 20px;
+}
+.aboutInfo .infoContainer a {
+  margin-top: 20px;
 }
 .aboutInfo .infoContainer button {
-  margin-left: 20px;
-  font-size: 20px;
-  padding: 10px 20px;
-  text-align: center;
-  color: #fff;
   background-color: #116500;
-  font-family: "Offside", cursive;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
   border: none;
+}
+.aboutInfo .infoContainer button:hover {
+  background-color: #213C28;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .ourPandaSection {
@@ -405,16 +437,6 @@ header .wrapper {
 }
 .ourPandaSection .pandaContainer {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .ourPandaSection .pandaContainer img {
   width: 100%;
@@ -424,41 +446,34 @@ header .wrapper {
   margin-top: 0;
 }
 .ourPandaSection .pandaInfo h3 {
-  font-size: 42px;
-  font-family: "Offside", cursive;
   font-weight: 400;
+  font-size: 42px;
   margin: 0;
 }
 .ourPandaSection .pandaInfo p {
-  font-size: 20px;
-  font-family: "Barlow", sans-serif;
-  line-height: 30px;
   margin-bottom: 30px;
+  line-height: 30px;
+  font-size: 20px;
 }
 .ourPandaSection .pandaInfo button {
-  padding: 15px;
   background-color: #fff;
-  text-decoration: none;
-  color: #116500;
   text-transform: uppercase;
-  font-family: "Offside", cursive;
+  text-decoration: none;
+  padding: 15px;
   border: none;
 }
 .ourPandaSection .pandaInfo button:hover {
   background-color: #116500;
-  color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  color: #fff;
 }
 
 .inquirySection {
   background-color: #D6F1E4;
   padding: 60px 0;
 }
-.inquirySection .inquiryFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.inquirySection .flex {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -468,18 +483,16 @@ header .wrapper {
   margin: 0;
 }
 .inquirySection .otherLinks li {
-  margin: 20px;
   list-style: none;
+  margin: 20px;
 }
 .inquirySection .otherLinks li a {
   text-decoration: none;
-  color: #116500;
-  font-family: "Offside", cursive;
   font-size: 20px;
 }
 .inquirySection .otherLinks li a i {
-  margin: 0 auto;
   font-size: 35px;
+  margin: 0 auto;
 }
 .inquirySection .otherLinks li:hover {
   -webkit-transform: scale(1.2);
@@ -489,33 +502,26 @@ header .wrapper {
 }
 
 .inquiryButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer {
   background-color: #213C28;
 }
-footer .wrapper {
-  max-width: 1400px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.footerContainer {
+footer .footerContainer {
   padding: 50px 0;
 }
-
-.updatedContainer,
-.contact {
+footer .footerContainer .updatedContainer,
+footer .footerContainer .contact {
   width: 45%;
 }
 
@@ -532,17 +538,17 @@ footer .wrapper {
   padding: 0 5px;
 }
 .updatedContainer .subscribe {
-  padding: 10px 25px;
   background-color: #2C2D2C;
-  color: #fff;
   font-family: "Offside", cursive;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  color: #fff;
   border: none;
   width: 30%;
-  text-transform: uppercase;
 }
 .updatedContainer .subscribe:hover {
-  color: #2C2D2C;
   background-color: #fff;
+  color: #2C2D2C;
 }
 
 .infoContainer {
@@ -551,38 +557,40 @@ footer .wrapper {
 .infoContainer h3,
 .infoContainer p {
   letter-spacing: 0.2px;
+  font-weight: 400;
 }
 .infoContainer h3 {
   font-family: "Offside", cursive;
-  font-weight: 400;
   font-size: 20px;
 }
 .infoContainer p {
   font-family: "Barlow", sans-serif;
-  font-weight: 400;
   font-size: 16px;
 }
 
 .buttonsContainer li {
-  list-style: none;
-  margin: 5px 0;
   text-align: right;
   line-height: 26px;
+  list-style: none;
+  margin: 2px 0;
 }
 .buttonsContainer li a {
+  font-family: "Offside", cursive;
   text-decoration: none;
   color: #fff;
-  font-family: "Offside", cursive;
+}
+.buttonsContainer li a:hover {
+  color: #2C2D2C;
 }
 
 .copyright {
-  padding: 20px 0;
   background-color: #2C2D2C;
+  padding: 15px 0;
 }
 .copyright p {
-  margin: 0;
-  text-align: center;
   font-family: "Barlow", sans-serif;
+  text-align: center;
+  margin: 0;
 }
 
 @media (max-width: 940px) {

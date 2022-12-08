@@ -11,3 +11,13 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 html {
    color: $quinary;
 }
+
+.flex {
+   display: flex;
+}
+
+.wrapper {
+   max-width: 1400px;
+   width: 90%;
+   margin: 0 auto;
+}

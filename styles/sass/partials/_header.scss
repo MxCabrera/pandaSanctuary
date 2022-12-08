@@ -1,19 +1,9 @@
-.flex {
-   display: flex;
-}
-
 header {
-   padding-top: 20px;
    background-image: url(../assets/header-image.png);
    background-size: cover;
+   padding-top: 20px;
    height: 100vh;
-   .wrapper {
-      max-width: 1400px;
-      width: 90%;
-      margin: 0 auto;
-   }   
 }
-
 
 .menuContainer {
    div {
@@ -24,10 +14,13 @@ header {
       width: 20%;
       a {
          font-family:$baseFontOne; 
-         font-size: 20px;
-         color: $quinary;
-         text-decoration: none;
       }
+   }
+   .logo a,
+   .navigations li a {
+      font-size: 20px;
+      text-decoration: none;
+      color: $quinary;
    }
    .navigations {
       width: 50%;
@@ -40,10 +33,6 @@ header {
       list-style: none;
       a {
          font-family: $baseFontTwo;
-         font-size: 20px;
-         font-weight: 400;
-         text-decoration: none;
-         color: $quinary;
       }
    }
    li:hover {
@@ -58,21 +47,28 @@ header {
    }
    .title {
       h1 {
-         width:40%;
          font-family: $baseFontTwo;
          font-size: 68.8px;
          font-weight: 400;
+         width:40%;
       }
    }
    .socialContainer li {
       list-style: none;
       a {
-         color: $quinary;
          text-decoration: none;
+         color: $quinary;
          i {
-            font-size: 26px;
             margin: 10px auto;
+            font-size: 26px;
          }
+      }
+      a:hover {
+         color: $secondary; 
+         transition: 0.5s;
+      }
+      a:visited {
+         color: $tertiary;
       }
    }
 }
