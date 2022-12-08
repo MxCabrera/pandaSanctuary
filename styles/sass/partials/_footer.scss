@@ -1,6 +1,5 @@
 footer {
    background-color: $secondary;
-   padding-top: 40px;
    .wrapper {
       max-width: 1400px;
       width: 90%;
@@ -9,7 +8,7 @@ footer {
 }
 
 .footerContainer {
-   padding: 30px 0;
+   padding: 50px 0;
 }
 
 .updatedContainer,
@@ -30,10 +29,16 @@ footer {
    input {
       width: 100%;
    }
-   a {
+   button {
       padding: 10px 25px;
       background-color: $quaternary;
+      color: $quinary;
       font-family: $baseFontOne;
+      border: none;
+   }
+   button:hover {
+      color: $quaternary;
+      background-color: $quinary;
    }
 }
 
@@ -68,7 +73,6 @@ footer {
       }
    }
 }
-
 
 .copyright {
    padding: 20px 0;
