@@ -239,6 +239,12 @@ html {
   color: #fff;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header {
   padding-top: 20px;
   background-image: url(../assets/header-image.png);
@@ -249,12 +255,6 @@ header .wrapper {
   max-width: 1400px;
   width: 90%;
   margin: 0 auto;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .menuContainer div {
@@ -276,6 +276,7 @@ header .wrapper {
 .menuContainer .navigations .flex {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 75%;
 }
 .menuContainer li {
   list-style: none;
@@ -283,7 +284,7 @@ header .wrapper {
 .menuContainer li a {
   font-family: "Barlow", sans-serif;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
   color: #fff;
 }
@@ -304,14 +305,13 @@ header .wrapper {
 }
 .wrapper .socialContainer li {
   list-style: none;
-  padding: 5px;
 }
 .wrapper .socialContainer li a {
   color: #fff;
   text-decoration: none;
 }
 .wrapper .socialContainer li a i {
-  font-size: 20px;
+  font-size: 26px;
   margin: 10px auto;
 }
 
@@ -538,6 +538,7 @@ footer .wrapper {
   font-family: "Offside", cursive;
   border: none;
   width: 30%;
+  text-transform: uppercase;
 }
 .updatedContainer .subscribe:hover {
   color: #2C2D2C;

@@ -1,3 +1,6 @@
+.flex {
+   display: flex;
+}
 
 header {
    padding-top: 20px;
@@ -11,9 +14,6 @@ header {
    }   
 }
 
-.flex {
-   display: flex;
-}
 
 .menuContainer {
    div {
@@ -33,6 +33,7 @@ header {
       width: 50%;
       .flex {
          justify-content: space-around;
+         width: 75%;
       }
    }
    li {
@@ -40,7 +41,7 @@ header {
       a {
          font-family: $baseFontTwo;
          font-size: 20px;
-         font-weight: 700;
+         font-weight: 400;
          text-decoration: none;
          color: $quinary;
       }
@@ -65,12 +66,11 @@ header {
    }
    .socialContainer li {
       list-style: none;
-      padding: 5px;
       a {
          color: $quinary;
          text-decoration: none;
          i {
-            font-size: 20px;
+            font-size: 26px;
             margin: 10px auto;
          }
       }
