@@ -28,15 +28,17 @@ footer {
    }
    input {
       width: 100%;
+      padding: 0 5px;
    }
-   button {
+   .subscribe {
       padding: 10px 25px;
       background-color: $quaternary;
       color: $quinary;
       font-family: $baseFontOne;
       border: none;
+      width: 30%;
    }
-   button:hover {
+   .subscribe:hover {
       color: $quaternary;
       background-color: $quinary;
    }

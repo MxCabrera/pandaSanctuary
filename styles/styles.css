@@ -529,15 +529,17 @@ footer .wrapper {
 }
 .updatedContainer input {
   width: 100%;
+  padding: 0 5px;
 }
-.updatedContainer button {
+.updatedContainer .subscribe {
   padding: 10px 25px;
   background-color: #2C2D2C;
   color: #fff;
   font-family: "Offside", cursive;
   border: none;
+  width: 30%;
 }
-.updatedContainer button:hover {
+.updatedContainer .subscribe:hover {
   color: #2C2D2C;
   background-color: #fff;
 }
