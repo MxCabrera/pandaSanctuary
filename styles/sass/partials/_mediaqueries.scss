@@ -14,14 +14,48 @@
    // html {
    //    visibility: hidden;
    // }
+
+   .menuContainer {
+      li {
+         margin: 0 10px;
+      }
+   }
 }
 
 
 @media (max-width: 768px) {
+   // header {
+   //    visibility: hidden;
+   // }
+   .hamburger {
+      display: block;
+   }
+   .navigations {
+      display: none;
+   }
 
+   .wrapper {
+      .title h1 {
+         width: 60%;
+         font-size: 52px;
+      }
+      .socialContainer {
+         margin-top: 30px;
+      }
+   }
 }
 
 @media (max-width: 480px) {
 
+   // .hamburger {
+   //    display: none;
+   // }
+
+   .wrapper {
+      .title h1 {
+         font-size: 48px;
+         width: 70%;
+      }
+   }
 
 }

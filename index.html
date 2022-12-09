@@ -14,30 +14,59 @@
 
 
 <body>
+   <!-- skipLink -->
+   <!-- <a href="#mainContent" class="skipLink">Skip to main content.</a> -->
+
    <!-- header starts here -->
-   <header>
+   <header id="home">
 
+      <!-- wrapper to contain content -->
       <div class="wrapper">
-
+         <!-- menuContainer  -->
          <section class="menuContainer flex">
+            <!-- parent container -->
             <div>
+               <!-- child container -->
                <div class="logo">
+                  <!-- link to homepage -->
                   <a href="#">Panda Sanctuary</a>
+               </div><!-- child container ends -->
+            </div><!-- parent container ends -->
+            
+            <!-- hamburger menu -->
+            <input id="toggle" type="checkbox"></input>
+            
+            <label for="toggle" class="hamburger">
+               <div class="top-bun"></div>
+               <div class="meat"></div>
+               <div class="bottom-bun"></div>
+            </label>
+            
+            <div class="nav1">
+               <div class="nav-wrapper">
+                  <nav class="hamNav">
+                     <a href="#">Home</a><br>
+                     <a href="#">About</a><br>
+                     <a href="#">Blog</a><br>
+                     <a href="#">Contact</a>
+                  </nav>
                </div>
             </div>
+            
+            <!-- desktop menu -->
             <nav class="navigations">
                <ul class="flex">
                   <li>
-                     <a href="">Home</a>
+                     <a href="#home">Home</a>
                   </li>
                   <li>
-                     <a href="">About</a>
+                     <a href="#about">About</a>
                   </li>
                   <li>
-                     <a href="">Blog</a>
+                     <a href="#blog">Blog</a>
                   </li>
                   <li>
-                     <a href="">Contact</a>
+                     <a href="#contact">Contact</a>
                   </li>
                </ul>
             </nav>
@@ -72,7 +101,7 @@
 
          <!-- first section   -->
 
-      <section class="aboutSection">
+      <section class="aboutSection" id="about">
          <div class="wrapper">
             <h2>Our New Friends</h2>
                <!-- three photos -->
@@ -106,7 +135,7 @@
    
    <!-- second section -->
 
-      <section class="ourPandaSection">
+      <section class="ourPandaSection" id="blog">
          <div class="flex">
             <div class="pandaContainer pandaInfo">
                <h3>Bobby and Bella</h3>
@@ -139,7 +168,7 @@
 
          <!-- inquires section here -->
 
-      <section class="inquirySection">
+      <section class="inquirySection" id="contact">
 
          <div class="wrapper">
             <ul class="otherLinks flex">

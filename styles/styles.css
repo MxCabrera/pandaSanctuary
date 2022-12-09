@@ -323,6 +323,125 @@ header {
   color: #D6F1E4;
 }
 
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 4em;
+  right: 5%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 3em;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #D6F1E4;
+  margin-top: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/**
+Nav Styles
+**/
+.nav1 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #090E6B;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.hamNav {
+  text-align: left;
+  margin-left: 25%;
+}
+
+.hamNav a {
+  position: relative;
+  text-decoration: none;
+  color: #6ecddd;
+  font-size: 2em;
+  display: inline-block;
+  margin-top: 1.25em;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+
+nav a:before {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: white;
+  left: -0.5em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a:hover:before {
+  height: 100%;
+}
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 25px;
+}
+
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#toggle:checked + .hamburger .meat {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .wrapper h2,
 .infoContainer button,
 .pandaInfo h3,
@@ -596,5 +715,29 @@ footer .footerContainer .contact {
 @media (max-width: 940px) {
   html {
     visibility: visible;
+  }
+  .menuContainer li {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .navigations {
+    display: none;
+  }
+  .wrapper .title h1 {
+    width: 60%;
+    font-size: 52px;
+  }
+  .wrapper .socialContainer {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .wrapper .title h1 {
+    font-size: 48px;
+    width: 70%;
   }
 }
