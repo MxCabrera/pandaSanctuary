@@ -824,6 +824,30 @@ footer .footerContainer .contact {
   .footerContainer .flex .updatedContainer,
 .footerContainer .flex .infoContainer {
     text-align: center;
-    width: 45%;
+  }
+  .footerContainer .flex .updatedContainer {
+    width: 100%;
+  }
+  .footerContainer .flex .updatedContainer .email {
+    padding: 20px;
+    text-align: center;
+  }
+  .footerContainer .flex .updatedContainer .subscribe {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .footerContainer .flex .contact {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footerContainer .flex .infoContainer {
+    width: 60%;
+    text-align: left;
+  }
+  .footerContainer .flex .buttonsContainer {
+    width: 40%;
   }
 }

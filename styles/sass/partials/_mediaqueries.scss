@@ -135,9 +135,29 @@
          .updatedContainer,
          .infoContainer {
             text-align: center;
-            width: 45%;
          }
-         
+         .updatedContainer {
+            width: 100%;
+            .email {
+               padding: 20px;
+               text-align: center;
+            }
+            .subscribe {
+               width: 50%;
+               margin: 0 auto;
+            }
+         }
+         .contact {
+            width: 100%;
+            flex-direction: row;
+         }
+         .infoContainer {
+            width: 60%;
+            text-align: left;
+         }
+         .buttonsContainer {
+            width: 40%;
+         }
       }
    }
 
