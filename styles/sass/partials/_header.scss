@@ -1,5 +1,6 @@
 header {
    background-image: url(../assets/header-image.png);
+   background-position: center;
    background-size: cover;
    padding-top: 20px;
    height: 100vh;
@@ -51,6 +52,7 @@ header {
    }
    .title {
       h1 {
+         @include textShadow;
          font-family: $baseFontTwo;
          font-size: 68.8px;
          font-weight: 400;
@@ -60,8 +62,10 @@ header {
    .socialContainer li {
       list-style: none;
       a {
+         @include textShadow;
          text-decoration: none;
          color: $quinary;
+         // text-shadow: 0.5px 0.5px 5px black ;
          i {
             margin: 10px auto;
             font-size: 26px;
@@ -105,9 +109,7 @@ header {
    transition: all 0.3s ease-in-out;
 }
 
-/**
-Nav Styles
-**/
+
 
 .nav1 {
    // display: none;
@@ -120,7 +122,6 @@ Nav Styles
    right: 0;
    bottom: 0;
    overflow: hidden;
-   transition: all 0.3s ease-in-out;
    transform: scale(0);
 }
 

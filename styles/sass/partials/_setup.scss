@@ -11,6 +11,9 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 html {
    color: $quinary;
 }
+* {
+   transition: all 0.25s linear;
+}
 
 .flex {
    display: flex;

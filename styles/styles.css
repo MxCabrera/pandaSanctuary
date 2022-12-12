@@ -239,6 +239,11 @@ html {
   color: #fff;
 }
 
+* {
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,6 +258,7 @@ html {
 
 header {
   background-image: url(../assets/header-image.png);
+  background-position: center;
   background-size: cover;
   padding-top: 20px;
   height: 100vh;
@@ -298,6 +304,7 @@ header {
           justify-content: space-between;
 }
 .wrapper .title h1 {
+  text-shadow: 0.5px 0.5px 5px black;
   font-family: "Barlow", sans-serif;
   font-size: 68.8px;
   font-weight: 400;
@@ -307,6 +314,7 @@ header {
   list-style: none;
 }
 .wrapper .socialContainer li a {
+  text-shadow: 0.5px 0.5px 5px black;
   text-decoration: none;
   color: #fff;
 }
@@ -350,9 +358,6 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-/**
-Nav Styles
-**/
 .nav1 {
   position: fixed;
   width: 100%;
@@ -363,8 +368,6 @@ Nav Styles
   right: 0;
   bottom: 0;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
@@ -544,8 +547,6 @@ Animations
 }
 .aboutInfo .infoContainer button:hover {
   background-color: #213C28;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 .ourPandaSection {
@@ -580,8 +581,6 @@ Animations
 }
 .ourPandaSection .pandaInfo button:hover {
   background-color: #116500;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   color: #fff;
 }
 
@@ -613,8 +612,6 @@ Animations
 .inquirySection .otherLinks li:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .inquiryButtons {
