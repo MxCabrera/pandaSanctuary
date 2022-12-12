@@ -279,6 +279,7 @@ header {
   font-size: 20px;
   text-decoration: none;
   color: #fff;
+  text-shadow: 0.5px 0.5px 5px black;
 }
 .menuContainer .navigations {
   width: 50%;
@@ -613,10 +614,12 @@ Animations
 }
 .inquirySection .otherLinks li a {
   text-decoration: none;
+  color: #116500;
   font-size: 20px;
 }
 .inquirySection .otherLinks li a i {
   font-size: 35px;
+  color: #2C2D2C;
   margin: 0 auto;
 }
 .inquirySection .otherLinks li:hover {
@@ -744,13 +747,24 @@ footer .footerContainer .contact {
   }
 }
 @media (max-width: 600px) {
+  .socialContainer {
+    display: none;
+  }
+  .aboutSection .wrapper .flex {
+    margin: 0 auto;
+  }
   .aboutSection .wrapper .flex .photoPartners {
     width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+  .aboutSection .wrapper .flex .photoPartners img {
+    width: 100%;
   }
   .aboutSection .wrapper .flex .photoThree {
     width: 100%;
   }
   .aboutSection .wrapper .aboutInfo {
+    margin-top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -768,12 +782,17 @@ footer .footerContainer .contact {
   }
   .aboutSection .wrapper .aboutInfo .infoContainer h2 {
     font-size: 6vw;
+    margin-bottom: 15px;
   }
   .aboutSection .wrapper .aboutInfo .infoContainer p {
     font-size: 4vw;
   }
   .aboutSection .wrapper .aboutInfo .infoContainer a {
     margin: 0 auto;
+  }
+  .aboutInfo .infoContainer button {
+    padding: 30px 50px;
+    margin: 30px;
   }
   .ourPandaSection .flex {
     -webkit-box-orient: vertical;
@@ -834,7 +853,7 @@ footer .footerContainer .contact {
   }
   .footerContainer .flex .updatedContainer .subscribe {
     width: 50%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .footerContainer .flex .contact {
     width: 100%;
@@ -844,8 +863,12 @@ footer .footerContainer .contact {
             flex-direction: row;
   }
   .footerContainer .flex .infoContainer {
-    width: 60%;
+    width: 50%;
     text-align: left;
+  }
+  .footerContainer .flex .infoContainer p .number {
+    display: block;
+    margin-top: 13px;
   }
   .footerContainer .flex .buttonsContainer {
     width: 40%;

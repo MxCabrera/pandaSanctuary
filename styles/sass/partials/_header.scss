@@ -17,13 +17,15 @@ header {
       width: 20%;
       a {
          font-family:$baseFontOne; 
+
       }
    }
    .logo a,
    .navigations li a {
       font-size: 20px;
       text-decoration: none;
-      color: $quinary;
+      color: $quinary;         
+      text-shadow: .5px .5px 5px black;
    }
    .navigations {
       width: 50%;
