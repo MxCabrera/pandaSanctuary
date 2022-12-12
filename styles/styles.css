@@ -520,7 +520,7 @@ Animations
   width: 70%;
 }
 .aboutInfo .infoContainer h2 {
-  font-size: 4vw;
+  font-size: 2.5vw;
   margin-bottom: 30px;
 }
 .aboutInfo .infoContainer h2,
@@ -552,18 +552,21 @@ Animations
 .aboutInfo .infoContainer button:hover {
   background-color: #213C28;
 }
-.aboutInfo .hide {
-  display: none;
-}
 
 .ourPandaSection {
   background-color: #213C28;
+}
+.ourPandaSection .unhide {
+  display: none;
 }
 .ourPandaSection .pandaContainer {
   width: 50%;
 }
 .ourPandaSection .pandaContainer img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 .ourPandaSection .pandaInfo {
   padding: 7% 5%;
@@ -755,6 +758,7 @@ footer .footerContainer .contact {
   }
   .aboutSection .wrapper .aboutInfo .hide {
     display: block;
+    width: 100%;
   }
   .aboutSection .wrapper .aboutInfo .unhide {
     display: none;
@@ -763,15 +767,63 @@ footer .footerContainer .contact {
     width: 100%;
   }
   .aboutSection .wrapper .aboutInfo .infoContainer h2 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .aboutSection .wrapper .aboutInfo .infoContainer p {
     font-size: 4vw;
+  }
+  .aboutSection .wrapper .aboutInfo .infoContainer a {
+    margin: 0 auto;
+  }
+  .ourPandaSection .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ourPandaSection .flex .pandaContainer {
+    width: 100%;
+  }
+  .ourPandaSection .unhide {
+    display: block;
+  }
+  .ourPandaSection .hide {
+    display: none;
+  }
+  .ourPandaSection .pandaContainer a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .ourPandaSection .pandaInfo h3 {
+    text-align: center;
   }
 }
 @media (max-width: 480px) {
   .wrapper .title h1 {
     font-size: 48px;
     width: 70%;
+  }
+  .inquirySection .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inquirySection .flex .inquiryButtons {
+    text-align: center;
+  }
+  .footerContainer .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .footerContainer .flex .updatedContainer,
+.footerContainer .flex .infoContainer {
+    text-align: center;
+    width: 45%;
   }
 }
