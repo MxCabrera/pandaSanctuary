@@ -478,14 +478,17 @@ Animations
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .aboutPhotos .photoContainer {
-  width: 33.3333333333%;
+  width: calc(33.3333333333% - 20px);
   margin: 10px;
 }
 .aboutPhotos .photoContainer img {
   width: 100%;
+  min-width: 200px;
 }
 .aboutPhotos .photoContainer:hover {
   -webkit-transform: scale(1.05);
@@ -517,6 +520,7 @@ Animations
   width: 70%;
 }
 .aboutInfo .infoContainer h2 {
+  font-size: 4vw;
   margin-bottom: 30px;
 }
 .aboutInfo .infoContainer h2,
@@ -529,7 +533,7 @@ Animations
   margin-bottom: 20px;
   line-height: 30px;
   color: #213C28;
-  font-size: 20px;
+  font-size: 2vw;
 }
 .aboutInfo .infoContainer a {
   margin-top: 20px;
@@ -547,6 +551,9 @@ Animations
 }
 .aboutInfo .infoContainer button:hover {
   background-color: #213C28;
+}
+.aboutInfo .hide {
+  display: none;
 }
 
 .ourPandaSection {
@@ -714,6 +721,11 @@ footer .footerContainer .contact {
     margin: 0 10px;
   }
 }
+@media (max-width: 840px) {
+  .wrapper .title h1 {
+    width: 60%;
+  }
+}
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -722,11 +734,39 @@ footer .footerContainer .contact {
     display: none;
   }
   .wrapper .title h1 {
-    width: 60%;
     font-size: 52px;
   }
   .wrapper .socialContainer {
     margin-top: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .aboutSection .wrapper .flex .photoPartners {
+    width: calc(50% - 20px);
+  }
+  .aboutSection .wrapper .flex .photoThree {
+    width: 100%;
+  }
+  .aboutSection .wrapper .aboutInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutSection .wrapper .aboutInfo .hide {
+    display: block;
+  }
+  .aboutSection .wrapper .aboutInfo .unhide {
+    display: none;
+  }
+  .aboutSection .wrapper .aboutInfo .infoContainer {
+    width: 100%;
+  }
+  .aboutSection .wrapper .aboutInfo .infoContainer h2 {
+    font-size: 5vw;
+  }
+  .aboutSection .wrapper .aboutInfo .infoContainer p {
+    font-size: 4vw;
   }
 }
 @media (max-width: 480px) {
