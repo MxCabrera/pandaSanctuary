@@ -256,11 +256,6 @@ html {
   margin: 0 auto;
 }
 
-* {
-  border: 1px solid red;
-  font-weight: 400;
-}
-
 header {
   background-image: url(../assets/header-image.png);
   background-position: center;
@@ -482,9 +477,9 @@ Animations
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -531,6 +526,7 @@ Animations
   font-size: 3vw;
   margin-bottom: 30px;
   font-weight: 400;
+  line-height: 40px;
 }
 .aboutInfo .infoContainer h2,
 .aboutInfo .infoContainer p,
@@ -543,6 +539,7 @@ Animations
   line-height: 30px;
   color: #213C28;
   font-size: 2vw;
+  line-height: 35px;
 }
 .aboutInfo .infoContainer a {
   margin-top: 20px;
@@ -623,10 +620,10 @@ Animations
 .inquirySection .otherLinks li a {
   text-decoration: none;
   color: #116500;
-  font-size: 20px;
+  font-size: 25px;
 }
 .inquirySection .otherLinks li a i {
-  font-size: 35px;
+  font-size: 42px;
   color: #2C2D2C;
   margin: 0 auto;
 }
@@ -727,12 +724,27 @@ footer .footerContainer .contact {
   margin: 0;
 }
 
+@media (max-width: 1140px) {
+  .aboutInfo .infoContainer h2 {
+    margin-bottom: 5px;
+  }
+  .aboutInfo .smallPhotoContainer {
+    width: 29%;
+  }
+  .updatedContainer .subscribe {
+    width: 45%;
+  }
+}
 @media (max-width: 940px) {
   html {
     visibility: visible;
   }
   .menuContainer li {
     margin: 0 10px;
+  }
+  .wrapper .title h1 {
+    font-size: 57px;
+    width: 53%;
   }
 }
 @media (max-width: 840px) {
@@ -752,6 +764,34 @@ footer .footerContainer .contact {
   }
   .wrapper .socialContainer {
     margin-top: 30px;
+  }
+  .aboutInfo .infoContainer h2 {
+    font-size: 30px;
+  }
+  .aboutInfo .infoContainer p {
+    font-size: 20px;
+  }
+  .ourPandaSection .pandaInfo h3 {
+    font-size: 33px;
+  }
+  .ourPandaSection .pandaInfo p {
+    font-size: 20px;
+  }
+  .updatedContainer .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .updatedContainer .subscribe {
+    width: 100%;
+  }
+  .footerContainer .infoContainer {
+    line-height: 15px;
+  }
+  .footerContainer .infoContainer p .number {
+    display: block;
+    margin-top: 18px;
   }
 }
 @media (max-width: 600px) {
@@ -803,7 +843,7 @@ footer .footerContainer .contact {
     margin: 0 auto;
   }
   .aboutInfo .infoContainer button {
-    padding: 30px 50px;
+    padding: 25px 43px;
     margin: 30px;
   }
   .ourPandaSection .flex {
@@ -838,6 +878,12 @@ footer .footerContainer .contact {
     font-size: 22px;
     padding: 20px 30px;
     margin-bottom: 30px;
+  }
+  .ourPandaSection .pandaInfo p {
+    line-height: 35px;
+  }
+  .updatedContainer input {
+    padding: 10px 13px;
   }
 }
 @media (max-width: 480px) {

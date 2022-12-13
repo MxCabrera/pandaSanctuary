@@ -1,19 +1,50 @@
+//  ~ 1140 px ~ //
 
+@media (max-width: 1140px) {
+
+   .aboutInfo {
+      .infoContainer h2 {
+         margin-bottom: 5px;
+      }
+      .smallPhotoContainer {
+         width: 29%;
+      }
+   }
+   .updatedContainer {
+      .subscribe {
+         width: 45%;
+      }
+   }
+}
+
+
+
+//  ~ 940px ~ //
 
 @media (max-width: 940px) {
 
    html {
       visibility: visible;
    }
-
    .menuContainer {
       li {
          margin: 0 10px;
       }
    }
-
-
+   .wrapper {
+      .title {
+         h1 {
+            font-size: 57px;
+            width: 53%;
+         }
+      }
+   }
 }
+
+
+
+
+//  ~ 840px ~ //
 
 @media (max-width: 840px) {
    .wrapper .title {
@@ -21,19 +52,19 @@
          width: 60%;
       }
    }
-
 }
 
 
-@media (max-width: 768px) {
 
+//  ~ 768px ~ //
+
+@media (max-width: 768px) {
    .hamburger {
       display: block;
    }
    .navigations {
       display: none;
    }
-
    .wrapper {
       .title h1 {
          // width:÷ 60%;
@@ -43,10 +74,50 @@
          margin-top: 30px;
       }
    }
+   .aboutInfo {
+      .infoContainer {
+         h2 {
+            font-size: 30px;
+         }  
+         p {
+            font-size: 20px;
+         }
+      }
+   }
+   .ourPandaSection {
+      .pandaInfo h3 {
+         font-size: 33px;
+      
+      }
+      .pandaInfo p {
+         font-size: 20px;
+      }
+   }
+   .updatedContainer {
+      .flex {
+         flex-direction: column;
+      }
+      .subscribe {
+         width: 100%;
+      }
+   }
+   .footerContainer {
+      .infoContainer {
+         line-height: 15px;
+         p .number {
+            display: block;
+            margin-top: 18px;
+         }
+      }
+   }
 }
 
-@media (max-width: 600px) {
 
+
+
+// ~ 600px ~ //
+
+@media (max-width: 600px) {
    .socialContainer {
       display: none;
    }
@@ -96,7 +167,7 @@
    }
    .aboutInfo {
       .infoContainer button {
-         padding: 30px 50px;
+         padding: 25px 43px;
          margin: 30px;
       }
    }
@@ -130,13 +201,23 @@
             padding: 20px 30px;
             margin-bottom: 30px;
          }
+         p {
+            line-height: 35px;
+         }
       }
    }
-
+   .updatedContainer {
+      input {
+         padding: 10px 13px;
+      }
+   }
 }
 
-@media (max-width: 480px) {
 
+
+//  ~ 480px ~ //
+
+@media (max-width: 480px) {
    .wrapper {
       .title h1 {
          font-size: 40px;
@@ -144,14 +225,11 @@
          line-height: 50px;
       }
    }
-
-
    .aboutPhoto {
       .photoContainer {
          margin: 0px;
       }
    }
-
    .inquirySection {
       .flex {
          flex-direction: column;
@@ -164,7 +242,6 @@
          }
       }
    }
-
    .footerContainer {
       .flex {
          flex-direction: column;
