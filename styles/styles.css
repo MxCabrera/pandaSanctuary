@@ -340,7 +340,7 @@ header {
   display: none;
   position: absolute;
   top: 4em;
-  right: 10%;
+  right: 8%;
   margin-left: -2em;
   margin-top: -45px;
   width: 2em;
@@ -416,9 +416,6 @@ nav a:hover:before {
   height: 100%;
 }
 
-/**
-Animations
-**/
 #toggle:checked + .hamburger .top-bun {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -577,6 +574,16 @@ Animations
 .ourPandaSection .pandaInfo {
   padding: 7% 5%;
   margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .ourPandaSection .pandaInfo h3 {
   font-weight: 400;

@@ -1,3 +1,4 @@
+// font styles //
 .wrapper h2,
 .infoContainer button,
 .pandaInfo h3,
@@ -11,6 +12,8 @@
    font-family: $baseFontTwo;
 }
 
+
+// color styles //
 .aboutSection .wrapper h2,
 .pandaInfo button,
 .otherLinks li a {
@@ -18,7 +21,7 @@
 }
 
 
-
+// about section //
 .aboutSection {
    background-color: $tertiary;
    padding: 20px 0;
@@ -38,7 +41,6 @@
       
    }
 }
-
 .aboutPhotos {
    figure {
       margin: 0;
@@ -54,7 +56,6 @@
       transition: 1s;
    }
 }
-
 .aboutInfo {
    padding: 40px 0;
    .smallPhotoContainer {
@@ -80,14 +81,12 @@
          text-align: left;
          padding: 0 15px;
       }
-
       p {
          margin-bottom: 20px;
          line-height: 30px;
          color: $secondary;
          font-size: clamp(2vw, 1.6vw, 2.3vw);
          line-height: 35px;
-
       }
       a {
          margin-top: 20px;
@@ -110,15 +109,13 @@
 }
 
 
+// blog section //
 .ourPandaSection {
    background-color: $secondary;
    .unhide {
       display: none;
    }
    .pandaContainer {
-      // justify-content: space-between;
-      // flex-direction: column;
-      // display: flex;
       width: 50%;
       img {
          width: 100%;
@@ -129,11 +126,12 @@
    .pandaInfo {
       padding: 7% 5%;
       margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       h3 {
          font-weight: 400;
          font-size: 42px;
-         // font-size: clamp(4vw, 4vw, 8vw);
-         // text-align: center;
          margin: 0;
       }
       p {
@@ -145,7 +143,6 @@
          background-color: $quinary;
          text-transform: uppercase;
          text-decoration: none;
-         // color: $primary;
          padding: 15px;
          border: none;
       }
@@ -155,6 +152,8 @@
       }
    }
 }
+
+// inquiry section //
 
 .inquirySection {
    background-color: $tertiary;
@@ -184,7 +183,6 @@
       }
    }
 }
-
 .inquiryButtons {
    justify-content: center;
    flex-direction: column;
