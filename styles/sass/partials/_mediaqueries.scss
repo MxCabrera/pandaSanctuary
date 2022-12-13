@@ -1,7 +1,4 @@
-// @media (max-width: 1400px) {
 
-
-// }
 
 @media (max-width: 940px) {
 
@@ -54,17 +51,21 @@
       display: none;
    }
    .aboutSection .wrapper {
+      h2 {
+         font-size: 32px;
+      }
       .flex {
          margin: 0 auto;
          .photoPartners {
-            width: calc(100% / 2 - 20px);
-            margin: 0 10px;
+            width: calc(100% / 2 - 10px);
+            margin: 0;
             img {
                width: 100%;
             }
          }
          .photoThree {
             width: 100%;
+            margin-top: 70px;
          }
       }
       .aboutInfo {
@@ -118,8 +119,16 @@
          text-align: center;
       }
       .pandaInfo {
+         padding: 0 5%;
          h3 {
             text-align: center;
+            font-size: 35px;
+            margin: 70px 0;
+         }
+         button {
+            font-size: 22px;
+            padding: 20px 30px;
+            margin-bottom: 30px;
          }
       }
    }
@@ -130,8 +139,16 @@
 
    .wrapper {
       .title h1 {
-         font-size: 48px;
-         width: 70%;
+         font-size: 40px;
+         width: 60%;
+         line-height: 50px;
+      }
+   }
+
+
+   .aboutPhoto {
+      .photoContainer {
+         margin: 0px;
       }
    }
 
@@ -140,6 +157,10 @@
          flex-direction: column;
          .inquiryButtons {
             text-align: center;
+            font-size: 28px;
+            i {
+               font-size: 58px;
+            }
          }
       }
    }
@@ -154,13 +175,21 @@
          }
          .updatedContainer {
             width: 100%;
+            h3 {
+               font-size: 28px;
+            }
+            p {
+               font-size: 17px;
+            }
             .email {
                padding: 20px;
                text-align: center;
             }
             .subscribe {
-               width: 50%;
+               width: 47%;
                margin: 15px auto;
+               padding: 20px 25px;
+               font-size: 19px;
             }
          }
          .contact {
@@ -168,8 +197,16 @@
             flex-direction: row;
          }
          .infoContainer {
-            width: 50%;
+            width: 60%;
+            line-height: 10px;
             text-align: left;
+            h3 {
+               font-size: 28px;
+               margin: 8px 0;
+            }
+            p {
+               font-size: 18px;
+            }
             p .number {
                display: block;
                margin-top: 13px;
@@ -177,6 +214,9 @@
          }
          .buttonsContainer {
             width: 40%;
+            li a {
+               font-size: 20px;
+            }
          }
       }
    }

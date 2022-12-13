@@ -256,6 +256,11 @@ html {
   margin: 0 auto;
 }
 
+* {
+  border: 1px solid red;
+  font-weight: 400;
+}
+
 header {
   background-image: url(../assets/header-image.png);
   background-position: center;
@@ -340,7 +345,7 @@ header {
   display: none;
   position: absolute;
   top: 4em;
-  right: 5%;
+  right: 10%;
   margin-left: -2em;
   margin-top: -45px;
   width: 2em;
@@ -471,6 +476,7 @@ Animations
   font-size: 42px;
   padding: 50px;
   margin: 0;
+  font-weight: 400;
 }
 .aboutSection .wrapper .flex {
   -webkit-box-pack: justify;
@@ -483,13 +489,14 @@ Animations
       flex-wrap: wrap;
 }
 
+.aboutPhotos figure {
+  margin: 0;
+}
 .aboutPhotos .photoContainer {
-  width: calc(33.3333333333% - 20px);
-  margin: 10px;
+  width: calc(33.3333333333% - 10px);
 }
 .aboutPhotos .photoContainer img {
   width: 100%;
-  min-width: 200px;
 }
 .aboutPhotos .photoContainer:hover {
   -webkit-transform: scale(1.05);
@@ -521,8 +528,9 @@ Animations
   width: 70%;
 }
 .aboutInfo .infoContainer h2 {
-  font-size: 2.5vw;
+  font-size: 3vw;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 .aboutInfo .infoContainer h2,
 .aboutInfo .infoContainer p,
@@ -750,18 +758,22 @@ footer .footerContainer .contact {
   .socialContainer {
     display: none;
   }
+  .aboutSection .wrapper h2 {
+    font-size: 32px;
+  }
   .aboutSection .wrapper .flex {
     margin: 0 auto;
   }
   .aboutSection .wrapper .flex .photoPartners {
-    width: calc(50% - 20px);
-    margin: 0 10px;
+    width: calc(50% - 10px);
+    margin: 0;
   }
   .aboutSection .wrapper .flex .photoPartners img {
     width: 100%;
   }
   .aboutSection .wrapper .flex .photoThree {
     width: 100%;
+    margin-top: 70px;
   }
   .aboutSection .wrapper .aboutInfo {
     margin-top: 0;
@@ -814,14 +826,28 @@ footer .footerContainer .contact {
     width: 100%;
     text-align: center;
   }
+  .ourPandaSection .pandaInfo {
+    padding: 0 5%;
+  }
   .ourPandaSection .pandaInfo h3 {
     text-align: center;
+    font-size: 35px;
+    margin: 70px 0;
+  }
+  .ourPandaSection .pandaInfo button {
+    font-size: 22px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 480px) {
   .wrapper .title h1 {
-    font-size: 48px;
-    width: 70%;
+    font-size: 40px;
+    width: 60%;
+    line-height: 50px;
+  }
+  .aboutPhoto .photoContainer {
+    margin: 0px;
   }
   .inquirySection .flex {
     -webkit-box-orient: vertical;
@@ -831,6 +857,10 @@ footer .footerContainer .contact {
   }
   .inquirySection .flex .inquiryButtons {
     text-align: center;
+    font-size: 28px;
+  }
+  .inquirySection .flex .inquiryButtons i {
+    font-size: 58px;
   }
   .footerContainer .flex {
     -webkit-box-orient: vertical;
@@ -847,13 +877,21 @@ footer .footerContainer .contact {
   .footerContainer .flex .updatedContainer {
     width: 100%;
   }
+  .footerContainer .flex .updatedContainer h3 {
+    font-size: 28px;
+  }
+  .footerContainer .flex .updatedContainer p {
+    font-size: 17px;
+  }
   .footerContainer .flex .updatedContainer .email {
     padding: 20px;
     text-align: center;
   }
   .footerContainer .flex .updatedContainer .subscribe {
-    width: 50%;
+    width: 47%;
     margin: 15px auto;
+    padding: 20px 25px;
+    font-size: 19px;
   }
   .footerContainer .flex .contact {
     width: 100%;
@@ -863,8 +901,16 @@ footer .footerContainer .contact {
             flex-direction: row;
   }
   .footerContainer .flex .infoContainer {
-    width: 50%;
+    width: 60%;
+    line-height: 10px;
     text-align: left;
+  }
+  .footerContainer .flex .infoContainer h3 {
+    font-size: 28px;
+    margin: 8px 0;
+  }
+  .footerContainer .flex .infoContainer p {
+    font-size: 18px;
   }
   .footerContainer .flex .infoContainer p .number {
     display: block;
@@ -872,5 +918,8 @@ footer .footerContainer .contact {
   }
   .footerContainer .flex .buttonsContainer {
     width: 40%;
+  }
+  .footerContainer .flex .buttonsContainer li a {
+    font-size: 20px;
   }
 }

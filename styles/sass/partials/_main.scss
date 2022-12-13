@@ -29,6 +29,7 @@
          font-size: 42px;
          padding: 50px;
          margin: 0;
+         font-weight: 400;
       }
       .flex {
          justify-content: space-between;
@@ -40,12 +41,16 @@
 }
 
 .aboutPhotos {
+   figure {
+      margin: 0;
+   }
    .photoContainer {
-      width: calc(100% / 3 - 20px);
-      margin: 10px;
+      width: calc(100% / 3 - 10px);
+      // width: 32.5%;
+      // margin: 10px;
       img {
          width: 100%;
-         min-width: 200px; 
+         // min-width: 200px; 
       }
    }
    .photoContainer:hover {
@@ -68,8 +73,9 @@
       flex-direction: column;
       width: 70%;
       h2 {
-         font-size: clamp(1vw, 2.5vw, 6vw);
+         font-size: clamp(1vw, 3vw, 7vw);
          margin-bottom: 30px;
+         font-weight: 400;
       }
       h2,
       p,
@@ -185,5 +191,4 @@
    justify-content: center;
    flex-direction: column;
    display: flex;
-
 }
