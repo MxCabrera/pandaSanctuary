@@ -40,9 +40,9 @@ header {
       a {
          font-family: $baseFontTwo;
       }
-   }
-   li:hover {
-      text-decoration: underline;
+      a:hover {
+         color: $secondary;
+      }
    }
 }
 

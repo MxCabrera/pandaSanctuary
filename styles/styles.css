@@ -242,7 +242,6 @@ html {
 * {
   -webkit-transition: all 0.25s linear;
   transition: all 0.25s linear;
-  border: 1px solid red;
   font-weight: 400;
 }
 
@@ -297,8 +296,8 @@ header {
 .menuContainer li a {
   font-family: "Barlow", sans-serif;
 }
-.menuContainer li:hover {
-  text-decoration: underline;
+.menuContainer li a:hover {
+  color: #213C28;
 }
 
 .wrapper .flex {
