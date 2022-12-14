@@ -14,7 +14,7 @@ footer {
 // updated container //
 
 .updatedContainer {
-   h3 {
+   h5 {
       font-family: $baseFontOne;
       font-weight: 400;
       font-size: 20px;
@@ -45,12 +45,12 @@ footer {
 
 .infoContainer {
    line-height: 15px;
-   h3,
+   h5,
    p {
       letter-spacing: 0.2px;
       font-weight: 400;
    }
-   h3 {
+   h5 {
       font-family: $baseFontOne;
       font-size: 20px;
    }

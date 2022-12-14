@@ -242,6 +242,8 @@ html {
 * {
   -webkit-transition: all 0.25s linear;
   transition: all 0.25s linear;
+  border: 1px solid red;
+  font-weight: 400;
 }
 
 .flex {
@@ -276,10 +278,10 @@ header {
 }
 .menuContainer .logo a,
 .menuContainer .navigations li a {
-  font-size: 20px;
-  text-decoration: none;
-  color: #fff;
   text-shadow: 0.5px 0.5px 5px black;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
 }
 .menuContainer .navigations {
   width: 50%;
@@ -337,40 +339,40 @@ header {
 }
 
 .hamburger {
-  display: none;
   position: absolute;
-  top: 4em;
-  right: 8%;
-  margin-left: -2em;
   margin-top: -45px;
-  width: 2em;
+  margin-left: -2em;
+  display: none;
   height: 45px;
+  width: 2em;
   z-index: 5;
+  right: 8%;
+  top: 4em;
 }
 
 .hamburger div {
-  position: relative;
-  width: 3em;
-  height: 5px;
-  border-radius: 3px;
-  background-color: #D6F1E4;
-  margin-top: 8px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  background-color: #D6F1E4;
+  position: relative;
+  border-radius: 3px;
+  margin-top: 8px;
+  height: 5px;
+  width: 3em;
 }
 
 .nav1 {
-  position: fixed;
-  width: 100%;
-  height: 100%;
   background-color: #090E6B;
-  top: -100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
   -webkit-transform: scale(0);
           transform: scale(0);
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .nav-wrapper {
@@ -386,26 +388,26 @@ header {
 }
 
 .hamNav a {
-  position: relative;
-  text-decoration: none;
-  color: #6ecddd;
-  font-size: 2em;
-  display: inline-block;
-  margin-top: 1.25em;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
+  display: inline-block;
+  text-decoration: none;
   letter-spacing: 1px;
+  margin-top: 1.25em;
+  position: relative;
+  color: #6ecddd;
+  font-size: 2em;
 }
 
 nav a:before {
   content: "";
-  height: 0;
-  position: absolute;
-  width: 0.25em;
-  background-color: white;
-  left: -0.5em;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  background-color: white;
+  position: absolute;
+  width: 0.25em;
+  left: -0.5em;
+  height: 0;
 }
 
 nav a:hover {
@@ -465,10 +467,10 @@ nav a:hover:before {
 }
 .aboutSection .wrapper h2 {
   text-align: center;
+  font-weight: 400;
   font-size: 42px;
   padding: 50px;
   margin: 0;
-  font-weight: 400;
 }
 .aboutSection .wrapper .flex {
   -webkit-box-pack: justify;
@@ -507,9 +509,6 @@ nav a:hover:before {
   width: 100%;
 }
 .aboutInfo .infoContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -517,13 +516,16 @@ nav a:hover:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 70%;
 }
 .aboutInfo .infoContainer h2 {
   font-size: 3vw;
-  margin-bottom: 30px;
-  font-weight: 400;
+  margin-bottom: 10px;
   line-height: 40px;
+  font-weight: 400;
 }
 .aboutInfo .infoContainer h2,
 .aboutInfo .infoContainer p,
@@ -532,10 +534,10 @@ nav a:hover:before {
   padding: 0 15px;
 }
 .aboutInfo .infoContainer p {
+  font-size: 2vw;
   margin-bottom: 20px;
   line-height: 30px;
   color: #213C28;
-  font-size: 2vw;
   line-height: 35px;
 }
 .aboutInfo .infoContainer a {
@@ -566,24 +568,24 @@ nav a:hover:before {
   width: 50%;
 }
 .ourPandaSection .pandaContainer img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
+  width: 100%;
 }
 .ourPandaSection .pandaInfo {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 7% 5%;
   margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .ourPandaSection .pandaInfo h3 {
   font-weight: 400;
@@ -630,8 +632,8 @@ nav a:hover:before {
   font-size: 25px;
 }
 .inquirySection .otherLinks li a i {
-  font-size: 42px;
   color: #2C2D2C;
+  font-size: 42px;
   margin: 0 auto;
 }
 .inquirySection .otherLinks li:hover {
@@ -663,7 +665,7 @@ footer .footerContainer .contact {
   width: 45%;
 }
 
-.updatedContainer h3 {
+.updatedContainer h5 {
   font-family: "Offside", cursive;
   font-weight: 400;
   font-size: 20px;
@@ -692,12 +694,12 @@ footer .footerContainer .contact {
 .infoContainer {
   line-height: 15px;
 }
-.infoContainer h3,
+.infoContainer h5,
 .infoContainer p {
   letter-spacing: 0.2px;
   font-weight: 400;
 }
-.infoContainer h3 {
+.infoContainer h5 {
   font-family: "Offside", cursive;
   font-size: 20px;
 }
@@ -797,8 +799,8 @@ footer .footerContainer .contact {
     line-height: 15px;
   }
   .footerContainer .infoContainer p .number {
-    display: block;
     margin-top: 18px;
+    display: block;
   }
 }
 @media (max-width: 600px) {
@@ -819,8 +821,8 @@ footer .footerContainer .contact {
     width: 100%;
   }
   .aboutSection .wrapper .flex .photoThree {
-    width: 100%;
     margin-top: 70px;
+    width: 100%;
   }
   .aboutSection .wrapper .aboutInfo {
     margin-top: 0;
@@ -869,9 +871,9 @@ footer .footerContainer .contact {
     display: none;
   }
   .ourPandaSection .pandaContainer a {
+    text-align: center;
     display: block;
     width: 100%;
-    text-align: center;
   }
   .ourPandaSection .pandaInfo {
     padding: 0 5%;
@@ -882,9 +884,9 @@ footer .footerContainer .contact {
     margin: 70px 0;
   }
   .ourPandaSection .pandaInfo button {
-    font-size: 22px;
-    padding: 20px 30px;
     margin-bottom: 30px;
+    padding: 20px 30px;
+    font-size: 22px;
   }
   .ourPandaSection .pandaInfo p {
     line-height: 35px;
@@ -895,9 +897,9 @@ footer .footerContainer .contact {
 }
 @media (max-width: 480px) {
   .wrapper .title h1 {
+    line-height: 50px;
     font-size: 40px;
     width: 60%;
-    line-height: 50px;
   }
   .aboutPhoto .photoContainer {
     margin: 0px;
@@ -930,21 +932,21 @@ footer .footerContainer .contact {
   .footerContainer .flex .updatedContainer {
     width: 100%;
   }
-  .footerContainer .flex .updatedContainer h3 {
+  .footerContainer .flex .updatedContainer h5 {
     font-size: 28px;
   }
   .footerContainer .flex .updatedContainer p {
     font-size: 17px;
   }
   .footerContainer .flex .updatedContainer .email {
-    padding: 20px;
     text-align: center;
+    padding: 20px;
   }
   .footerContainer .flex .updatedContainer .subscribe {
-    width: 47%;
     margin: 15px auto;
     padding: 20px 25px;
     font-size: 19px;
+    width: 47%;
   }
   .footerContainer .flex .contact {
     width: 100%;
@@ -958,7 +960,7 @@ footer .footerContainer .contact {
     line-height: 10px;
     text-align: left;
   }
-  .footerContainer .flex .infoContainer h3 {
+  .footerContainer .flex .infoContainer h5 {
     font-size: 28px;
     margin: 8px 0;
   }

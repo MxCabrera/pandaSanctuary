@@ -28,10 +28,10 @@
    .wrapper {
       h2 {
          text-align: center;
+         font-weight: 400;
          font-size: 42px;
          padding: 50px;
          margin: 0;
-         font-weight: 400;
       }
       .flex {
          justify-content: space-between;
@@ -65,15 +65,15 @@
       }
    }
    .infoContainer {
-      display: flex;
       justify-content: space-evenly;
       flex-direction: column;
+      display: flex;
       width: 70%;
       h2 {
          font-size: clamp(1vw, 3vw, 7vw);
-         margin-bottom: 30px;
-         font-weight: 400;
+         margin-bottom: 10px;
          line-height: 40px;
+         font-weight: 400;
       }
       h2,
       p,
@@ -82,10 +82,10 @@
          padding: 0 15px;
       }
       p {
+         font-size: clamp(2vw, 1.6vw, 2.3vw);
          margin-bottom: 20px;
          line-height: 30px;
          color: $secondary;
-         font-size: clamp(2vw, 1.6vw, 2.3vw);
          line-height: 35px;
       }
       a {
@@ -118,17 +118,17 @@
    .pandaContainer {
       width: 50%;
       img {
-         width: 100%;
          object-fit: cover;
          height: 100%;
+         width: 100%;
       }
    }
    .pandaInfo {
+      justify-content: space-between;
+      flex-direction: column;
       padding: 7% 5%;
       margin-top: 0;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       h3 {
          font-weight: 400;
          font-size: 42px;
@@ -172,8 +172,8 @@
             color: $primary;
             font-size: 25px;
             i {
-               font-size: 42px;
                color: $quaternary;
+               font-size: 42px;
                margin: 0 auto;
             }
          }
